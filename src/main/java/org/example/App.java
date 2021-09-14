@@ -1,7 +1,7 @@
 package org.example;
 
 /*
- *  UCF COP3330 Fall 2021 Assignment 1 Solution
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
  *  Copyright 2021 Daniel Ragusa
  */
 
@@ -32,7 +32,9 @@ public class App
         Scanner input4=new Scanner(System.in);
         Adverb=input4.next();
 
-        System.out.println("Do you "+(Verb)+ " your "+(Adjective)+" "+(Noun)+" "+(Adverb)+"?"+" That's hilarious!");
+        String Final = String.format("Do you %s your %s %s %s? That's hilarious!", Verb,Adjective,Noun,Adverb);
+
+        System.out.println(Final);
     }
 }
 
